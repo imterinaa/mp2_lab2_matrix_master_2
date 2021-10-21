@@ -51,7 +51,7 @@ TEST(TVector, copied_vector_has_its_own_memory)
 
 TEST(TVector, can_get_size)
 {
-    const int SIZE = 4;
+    int SIZE = 4;
 
     TVector<int> v(SIZE);
 
@@ -60,7 +60,7 @@ TEST(TVector, can_get_size)
 
 TEST(TVector, can_get_start_index)
 {
-    const int SIZE = 4, SI = 2;
+    int SIZE = 4, SI = 2;
 
     TVector<int> v(SIZE, SI);
 
@@ -107,7 +107,7 @@ TEST(TVector, can_assign_vectors_of_equal_size)
 
 TEST(TVector, assign_operator_change_vector_size)
 {
-    const int SIZE1 = 5, SIZE2 = 3;
+    int SIZE1 = 5, SIZE2 = 3;
 
     TVector<int> v1(SIZE1), v2(SIZE2);
 
@@ -118,7 +118,7 @@ TEST(TVector, assign_operator_change_vector_size)
 
 TEST(TVector, can_assign_vectors_of_different_size)
 {
-    const int SIZE1 = 5, SIZE2 = 3;
+    int SIZE1 = 5, SIZE2 = 3;
 
     TVector<int> v1(SIZE1), v2(SIZE2);
 
@@ -143,7 +143,7 @@ TEST(TVector, compare_vector_with_itself_return_true)
 
 TEST(TVector, vectors_with_different_size_are_not_equal)
 {
-    const int SIZE1 = 5, SIZE2 = 3;
+    int SIZE1 = 5, SIZE2 = 3;
 
     TVector<int> v1(SIZE1), v2(SIZE2);
 
@@ -152,7 +152,7 @@ TEST(TVector, vectors_with_different_size_are_not_equal)
 
 TEST(TVector, can_add_scalar_to_vector)
 {
-    const int SIZE = 5;
+    int SIZE = 5;
 
     TVector<int> v1(SIZE), v2(SIZE);
 
@@ -169,7 +169,7 @@ TEST(TVector, can_add_scalar_to_vector)
 
 TEST(TVector, can_subtract_scalar_from_vector)
 {
-    const int SIZE = 5;
+    int SIZE = 5;
 
     TVector<int> v1(SIZE), v2(SIZE);
 
@@ -186,7 +186,7 @@ TEST(TVector, can_subtract_scalar_from_vector)
 
 TEST(TVector, can_multiply_scalar_by_vector)
 {
-    const int SIZE = 5;
+    int SIZE = 5;
 
     TVector<int> v1(SIZE), v2(SIZE);
 
@@ -203,7 +203,7 @@ TEST(TVector, can_multiply_scalar_by_vector)
 
 TEST(TVector, can_add_vectors_with_equal_size)
 {
-    const int SIZE = 5;
+    int SIZE = 5;
 
     TVector<int> v1(SIZE), v2(SIZE), v3(SIZE);
 
@@ -221,7 +221,7 @@ TEST(TVector, can_add_vectors_with_equal_size)
 
 TEST(TVector, cant_add_vectors_with_not_equal_size)
 {
-    const int SIZE1 = 5, SIZE2 = 3;
+    int SIZE1 = 5, SIZE2 = 3;
 
     TVector<int> v1(SIZE1), v2(SIZE2);
 
@@ -230,7 +230,7 @@ TEST(TVector, cant_add_vectors_with_not_equal_size)
 
 TEST(TVector, can_subtract_vectors_with_equal_size)
 {
-    const int SIZE = 5;
+    int SIZE = 5;
 
     TVector<int> v1(SIZE), v2(SIZE), v3(SIZE);
 
@@ -248,7 +248,7 @@ TEST(TVector, can_subtract_vectors_with_equal_size)
 
 TEST(TVector, cant_subtract_vectors_with_not_equal_size)
 {
-    const int SIZE1 = 5, SIZE2 = 3;
+     int SIZE1 = 5, SIZE2 = 3;
 
     TVector<int> v1(SIZE1), v2(SIZE2);
 
@@ -257,7 +257,7 @@ TEST(TVector, cant_subtract_vectors_with_not_equal_size)
 
 TEST(TVector, can_multiply_vectors_with_equal_size)
 {
-    const int SIZE = 5;
+     int SIZE = 5;
 
     TVector<int> v1(SIZE), v2(SIZE);
 
